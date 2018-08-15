@@ -4,7 +4,7 @@ function Login() {
         password = $('#password').val();
 
     $.ajax({
-        url: '35.240.243.203/login',
+        url: 'http://35.240.243.203/login',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -41,7 +41,7 @@ function SavesAhp() {
     }
     console.log(nilai)
     $.ajax({
-        url: '35.240.243.203/savesAhp',
+        url: 'http://35.240.243.203/savesAhp',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -65,7 +65,7 @@ function Register() {
         passwordregist = $('#passwordregist').val();
 
     $.ajax({
-        url: '35.240.243.203/register',
+        url: 'http://35.240.243.203/register',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -87,7 +87,7 @@ function Register() {
 
 function CekAhp() {
     $.ajax({
-        url: '35.240.243.203/cekAhp',
+        url: 'http://35.240.243.203/cekAhp',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -106,7 +106,7 @@ function CekAhp() {
 function CekData() {
 
     $.ajax({
-        url: '35.240.243.203/cekData',
+        url: 'http://35.240.243.203/cekData',
         type: 'GET',
         contentType: 'application/json',
         dataType: 'json',
@@ -169,7 +169,7 @@ function calculateAhp() {
         console.log(bobot);
 
         $.ajax({
-            url: '35.240.243.203/api/ahp',
+            url: 'http://35.240.243.203/api/ahp',
             type: 'POST',
             contentType: 'application/json',
             dataType: 'json',
