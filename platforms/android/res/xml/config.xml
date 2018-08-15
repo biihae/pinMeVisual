@@ -13,6 +13,7 @@
     </author>
     <content src="index.html" />
     <access launch-external="yes" origin="*" />
+    <access origin="*" />
     <access origin="http://google.com" />
     <access origin="https://google.com" />
     <access origin="http://maps.google.com" />
