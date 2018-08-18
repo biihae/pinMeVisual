@@ -331,7 +331,7 @@ function initMapDemo() {
     mapdemo.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendDemo);
 
     mapdemo.data.loadGeoJson(
-        '../geojson/lokasibuffer2km_pop.geojson'
+        'http://35.240.243.203/geojson/lokasibuffer2km_pop.geojson'
     );
 
     var InfoWindowMapDemo;
@@ -421,7 +421,7 @@ function initMapDemo() {
             return {
                 fillColor: color,
                 strokeWeight: 1
-            }
+            };
         }
 
 
@@ -525,7 +525,7 @@ function initMapPoi() {
     mapoi.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendPoi);
 
     mapoi.data.loadGeoJson(
-        '../geojson/poi.geojson'
+        'http://35.240.243.203/geojson/poi.geojson'
     );
 
     var InfoWindowMapPOI;
@@ -617,7 +617,7 @@ function initMapKom() {
 
     });
     mapkomp.data.loadGeoJson(
-        '../geojson/KompetitorBaru.geojson'
+        'http://35.240.243.203/geojson/KompetitorBaru.geojson'
     );
     var InfoWindowMapKomp;
     mapkomp.data.addListener('click', function (event) {
@@ -745,7 +745,7 @@ function initMapKom() {
 
     mapkomp.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendKomp);
     mapkomp.data.loadGeoJson(
-        '../geojson/LokasiBuffer_2km_2.geojson'
+        'http://35.240.243.203/geojson/LokasiBuffer_2km_2.geojson'
     );
 
 }
@@ -828,8 +828,9 @@ function initMapReta() {
     });
 
     mapreta.data.loadGeoJson(
-        '../geojson/Akses.geojson',
+        'http://35.240.243.203/geojson/Akses.geojson'
     );
+
     mapreta.data.setStyle(function (feature) {
         var kategori = feature.getProperty('type')
         var color;
@@ -866,11 +867,11 @@ function initMapReta() {
     });
 
     mapreta.data.loadGeoJson(
-        '../geojson/listruko.geojson',
+        'http://35.240.243.203/geojson/listruko.geojson'
     );
 
     mapreta.data.loadGeoJson(
-        '../geojson/LokasiBuffer_2km_2.geojson',
+        'http://35.240.243.203/geojson/LokasiBuffer_2km_2.geojson'
     );
 }
 
