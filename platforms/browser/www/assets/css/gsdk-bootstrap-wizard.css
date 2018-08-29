@@ -1058,3 +1058,19 @@ label small {
 #resultBlokM{
   display: none;
 }
+
+.disptable{
+  display: table;
+  width:100%
+}
+.disptablecell {
+  display:table-cell;
+  width: 25%;
+}
+.vertalignmid{
+  vertical-align: middle;
+}
+
+.padding-right30{
+  padding-right: 48px;
+}
