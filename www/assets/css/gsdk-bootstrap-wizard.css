@@ -1074,3 +1074,44 @@ label small {
 .padding-right30{
   padding-right: 48px;
 }
+.table{
+  width:40px;
+  margin: 0px;
+}
+.fontSize13{
+  font-size: 11px;
+  font-weight: bold;
+}
+.padding-right15{
+  padding-right: 15px;
+}
+.padding-right20{
+  padding-right: 20px;
+}
+.padding-right32{
+  padding-right: 32px;
+}
+.padding-right29{
+  padding-right: 29px;
+}
+.padding-right12{
+  padding-right: 12px;
+}
+.padding-right23{
+  padding-right: 23px;
+}
+.margin-right5{
+  margin-right: 5px;
+}
+.margin-right15{
+  margin-right: 15px;
+}
+.margin-right20{
+  margin-right: 20px;
+}
+.margin-right32{
+  margin-right: 32px;
+}
+.table80{
+  width: 80px;
+}

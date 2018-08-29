@@ -4,7 +4,7 @@ function Login() {
         password = $('#password').val();
 
     $.ajax({
-        url: 'http://35.240.243.203/login',
+        url: 'http://35.231.242.65/login',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -41,7 +41,7 @@ function SavesAhp() {
     }
     console.log(nilai)
     $.ajax({
-        url: 'http://35.240.243.203/savesAhp',
+        url: 'http://35.231.242.65/savesAhp',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -65,7 +65,7 @@ function Register() {
         passwordregist = $('#passwordregist').val();
 
     $.ajax({
-        url: 'http://35.240.243.203/register',
+        url: 'http://35.231.242.65/register',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -87,7 +87,7 @@ function Register() {
 
 function CekAhp() {
     $.ajax({
-        url: 'http://35.240.243.203/cekAhp',
+        url: 'http://35.231.242.65/cekAhp',
         type: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -106,7 +106,7 @@ function CekAhp() {
 function CekData() {
 
     $.ajax({
-        url: 'http://35.240.243.203/cekData',
+        url: 'http://35.231.242.65/cekData',
         type: 'GET',
         contentType: 'application/json',
         dataType: 'json',
@@ -169,7 +169,7 @@ function calculateAhp() {
         console.log(bobot);
 
         $.ajax({
-            url: 'http://35.240.243.203/api/ahp',
+            url: 'http://35.231.242.65/api/ahp',
             type: 'POST',
             contentType: 'application/json',
             dataType: 'json',
@@ -331,7 +331,7 @@ function initMapDemo() {
     mapdemo.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendDemo);
 
     mapdemo.data.loadGeoJson(
-        'http://35.240.243.203/geojson/lokasibuffer2km_pop.geojson'
+        'http://35.231.242.65/geojson/lokasibuffer2km_pop.geojson'
     );
 
     var InfoWindowMapDemo;
@@ -525,7 +525,7 @@ function initMapPoi() {
     mapoi.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendPoi);
 
     mapoi.data.loadGeoJson(
-        'http://35.240.243.203/geojson/poi.geojson'
+        'http://35.231.242.65/geojson/poi.geojson'
     );
 
     var InfoWindowMapPOI;
@@ -617,7 +617,7 @@ function initMapKom() {
 
     });
     mapkomp.data.loadGeoJson(
-        'http://35.240.243.203/geojson/KompetitorBaru.geojson'
+        'http://35.231.242.65/geojson/KompetitorBaru.geojson'
     );
     var InfoWindowMapKomp;
     mapkomp.data.addListener('click', function (event) {
@@ -745,7 +745,7 @@ function initMapKom() {
 
     mapkomp.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendKomp);
     mapkomp.data.loadGeoJson(
-        'http://35.240.243.203/geojson/LokasiBuffer_2km_2.geojson'
+        'http://35.231.242.65/geojson/LokasiBuffer_2km_2.geojson'
     );
 
 }
@@ -828,7 +828,7 @@ function initMapReta() {
     });
 
     mapreta.data.loadGeoJson(
-        'http://35.240.243.203/geojson/Akses.geojson'
+        'http://35.231.242.65/geojson/Akses.geojson'
     );
 
     mapreta.data.setStyle(function (feature) {
@@ -867,11 +867,11 @@ function initMapReta() {
     });
 
     mapreta.data.loadGeoJson(
-        'http://35.240.243.203/geojson/listruko.geojson'
+        'http://35.231.242.65/geojson/listruko.geojson'
     );
 
     mapreta.data.loadGeoJson(
-        'http://35.240.243.203/geojson/LokasiBuffer_2km_2.geojson'
+        'http://35.231.242.65/geojson/LokasiBuffer_2km_2.geojson'
     );
 }
 
