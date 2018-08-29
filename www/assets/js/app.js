@@ -342,7 +342,7 @@ function initMapDemo() {
             map: mapdemo, position: event.latLng
         });
         InfoWindowMapDemo = new google.maps.InfoWindow({
-            content: "Jumlah Penduduk : " + event.feature.getProperty('Jml_Pend') + " , " + event.feature.getProperty('KECAMATAN') + " " + event.feature.getProperty('Desa_1')
+            content: "Jumlah Penduduk : " + event.feature.getProperty('Jml_Pend') + " " + "Jumlah KK: " + event.feature.getProperty('KK')
         });
         InfoWindowMapDemo.open(mapdemo, markerMapDemo)
         markerArr.push(markerMapDemo);
@@ -929,7 +929,7 @@ function initMap() {
         var valueAhp;
         if (lok == "pasfes") {
             numberic = $('#resultPasfes').text();
-            valueAhp = "Paspes : " + numberic;
+            valueAhp = "Plaza Festival : " + numberic;
             var cityCircle = new google.maps.Circle({
                 strokeColor: '#F5862C',
                 strokeOpacity: 0.8,
@@ -959,7 +959,7 @@ function initMap() {
         }
         if (lok == "blokM") {
             numberic = $('#resultBlokM').text();
-            valueAhp = "blokM : " + numberic;
+            valueAhp = "Blok M : " + numberic;
             var cityCircle = new google.maps.Circle({
                 strokeColor: '#F5862C',
                 strokeOpacity: 0.8,
